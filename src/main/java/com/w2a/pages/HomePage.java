@@ -3,14 +3,17 @@ package com.w2a.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class HomePage {
-WebDriver driver;
-	
-	public HomePage(WebDriver driver) {
-	
-		this.driver=driver;
-}
+import com.w2a.base.page;
 
+public class HomePage extends page {
+
+
+	public LoginPage userLogin()
+	{
+		System.out.println("Inside userlogin function");
+		driver.findElement(By.cssSelector(".zh-login")).click();
+		return new LoginPage();
+	}
 	public void goToKnowledgeBase()
 	{
 		

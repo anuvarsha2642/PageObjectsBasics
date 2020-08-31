@@ -1,0 +1,9 @@
+15:49:44,232  INFO devpinoyLogger:57 - opening config file
+15:49:44,237 DEBUG devpinoyLogger:66 - Configuration file loaded
+15:49:44,238  INFO devpinoyLogger:73 - opening Page Object properties  file
+15:49:44,238 DEBUG devpinoyLogger:81 - Page object  file loaded
+15:50:10,035 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+15:50:10,037 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+15:50:10,039 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+15:50:10,041 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+15:50:10,042 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/anuva/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
