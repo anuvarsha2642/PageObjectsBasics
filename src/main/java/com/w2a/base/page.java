@@ -39,7 +39,7 @@ public static WebDriver driver;
 	public static WebDriverWait wait;
 	public static ExtentReports rep=ExtentManager.getInstance();
 	public static ExtentTest test;
-	public static ExcelReader excel=new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\TestData.xlsx");
+	public static ExcelReader excel=new ExcelReader(System.getProperty("user.dir")+"//src//test//resources//excel//TestData.xlsx");
 	public static CRMTopMenu topMenu;
 
 	
