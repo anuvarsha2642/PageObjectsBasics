@@ -50,7 +50,7 @@ public static WebDriver driver;
 		
 			  System.out.println("Driver is null"); 
 			  try {
-				fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\Configurations.properties");
+				fis=new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//properties//Configurations.properties");
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -66,7 +66,7 @@ public static WebDriver driver;
 			 
 			  log.debug("Configuration file loaded");
 			  try {
-					fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\PageObjects.properties");
+					fis=new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//properties//PageObjects.properties");
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
