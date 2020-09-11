@@ -9,15 +9,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
@@ -103,21 +100,8 @@ public static WebDriver driver;
 			 options.setExperimentalOption("prefs", hashMap);
 			 options.addArguments("-disable-extensions");
 			  options.addArguments("-disable-infobars");
-			 // WebDriverManager.chromiumdriver().setup(); 
-			  //******
-			// We could use any driver for our tests...
-			  DesiredCapabilities capabilities = new DesiredCapabilities();
-
-			  // ... but only if it supports javascript
-			  capabilities.setJavascriptEnabled(true);
-
-			  // Get a handle to the driver. This will throw an exception
-			  // if a matching driver cannot be located
-			  WebDriver driver = new RemoteWebDriver(capabilities);
-
-			  // Query the driver to find out more information
-			 // Capabilities actualCapabilities = ((RemoteWebDriver) driver).getCapabilities();
-			  //*******
+			 WebDriverManager.chromiumdriver().setup(); 
+			  
 			  driver = new  ChromeDriver(options);
 			  driver.get("https://www.zoho.com/");
 			  driver.manage().window().maximize();
